@@ -30,8 +30,9 @@ contract MiHolo {
         }
     }
 
-    function transferETH(address payable _to, uint256 _amount) onlyOwner payable{
+    function transferETH(address payable _to, uint256 _amount) onlyOwner public payable{
         (bool sent, bytes memory data) = _to.call{value: _amount}("");
         require(sent, "Failed to send Ether");
     }
+
 }

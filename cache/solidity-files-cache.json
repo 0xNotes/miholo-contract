@@ -746,50 +746,10 @@
         }
       }
     },
-    "src/Counter.sol": {
-      "lastModificationDate": 1668465559575,
-      "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
-      "sourceName": "src/Counter.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "Counter": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Counter.sol/Counter.json"
-        }
-      }
-    },
-    "src/miholo.sol": {
-      "lastModificationDate": 1668467254375,
-      "contentHash": "8ea9c8ec239c323adfc6be08846dc114",
-      "sourceName": "src/miholo.sol",
+    "src/MiHolo.sol": {
+      "lastModificationDate": 1668476987527,
+      "contentHash": "341435b66d9ef7abc5d34907a387c28a",
+      "sourceName": "src/MiHolo.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -822,14 +782,14 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "MiHolo": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "miholo.sol/MiHolo.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "MiHolo.sol/MiHolo.json"
         }
       }
     },
-    "test/Counter.t.sol": {
-      "lastModificationDate": 1668465559575,
-      "contentHash": "b1a6521ba9c61d5266bab1fc9a057d68",
-      "sourceName": "test/Counter.t.sol",
+    "test/MiHolo.t.sol": {
+      "lastModificationDate": 1668477805264,
+      "contentHash": "9fb23dd4ef78a8fca74e304c4c76804f",
+      "sourceName": "test/MiHolo.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -873,12 +833,15 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "src/Counter.sol"
+        "src/MiHolo.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
-        "CounterTest": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Counter.t.sol/CounterTest.json"
+        "CheatCodes": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "MiHolo.t.sol/CheatCodes.json"
+        },
+        "MiHoloTest": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "MiHolo.t.sol/MiHoloTest.json"
         }
       }
     }
